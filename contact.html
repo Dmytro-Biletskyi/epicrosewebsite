@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact EpicRose — intro or screener</title>
-  <meta name="description" content="Book a 20-minute intro or take the 10-minute screener. Same-day response in business hours." />
-  <meta name="keywords" content="contact EpicRose, clinic intro call, clinic screener, admin ROI UK" />
+  <meta
+    name="description"
+    content="Book a 20-minute intro or take the 10-minute screener. Same-day response in business hours."
+  />
+  <meta
+    name="keywords"
+    content="contact EpicRose, clinic intro call, clinic screener, admin ROI UK"
+  />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header>
@@ -29,67 +38,97 @@
         </ul>
       </nav>
       <div class="cta-group">
-        <a class="btn btn-primary" href="#book">Book 20-min intro</a>
-        <a class="btn btn-secondary" href="resources.html#screener">Take 10-min screener</a>
+        <a class="btn btn-primary" href="https://calendar.app.google/2CYrPKSnFn259YqR7" target="_blank" rel="noopener">Book 20-min intro</a>
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd8Bh-jlE-f5GahSLUsGvR573ek2jkYYZXaoo1dsQZod-D9Xw/viewform" target="_blank" rel="noopener">Take 10-min screener</a>
       </div>
     </div>
   </header>
   <div class="sticky-bar">30-day pilot · No EHR · KPI-backed · Self-pay &amp; Insurer tracks</div>
   <main>
     <section>
-      <h1>Get in touch</h1>
-      <p>We aim to reply the same business day.</p>
-      <p>Email: <a href="mailto:[EMAIL]">[EMAIL]</a></p>
-      <p>Book a call: <a href="[CALENDLY_URL]">[CALENDLY_URL]</a></p>
-      <div class="cta-inline" id="book">
-        <a class="btn btn-primary" href="[CALENDLY_URL]">Book 20-min intro</a>
-        <a class="btn btn-secondary" href="resources.html#screener">Take 10-min screener</a>
+      <div class="eyebrow">Talk to us</div>
+      <h1>Same-day response in business hours</h1>
+      <div class="section-intro">
+        Book directly into the calendar, take the screener to see quick wins, or send a note via the form. We’ll reply within the same
+        business day with next steps.
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>Quick actions</h3>
+          <ul class="check-list">
+            <li><a href="https://calendar.app.google/2CYrPKSnFn259YqR7" target="_blank" rel="noopener">Book a 20-min intro</a> — review pilot fit and KPI baselines.</li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8Bh-jlE-f5GahSLUsGvR573ek2jkYYZXaoo1dsQZod-D9Xw/viewform" target="_blank" rel="noopener">Take the 10-min screener</a> — receive ROI range within a day.</li>
+            <li>Email us directly: <a href="mailto:dmytro@epicrose.co.uk">dmytro@epicrose.co.uk</a>.</li>
+          </ul>
+        </div>
+        <div class="card" id="contact-form">
+          <h3>Send a message</h3>
+          <form action="https://formsubmit.co/dmytro@epicrose.co.uk" method="post">
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-grid">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="Name" type="text" required />
+              </div>
+              <div>
+                <label for="role">Role</label>
+                <input id="role" name="Role" type="text" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" required />
+              </div>
+              <div>
+                <label for="organisation">Organisation</label>
+                <input id="organisation" name="Organisation" type="text" required />
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input id="city" name="City" type="text" required />
+              </div>
+            </div>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="Comment" placeholder="Share context: specialty, monthly visits, biggest admin pain…"></textarea>
+            <button class="btn btn-primary" type="submit">Send and we’ll reply today</button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Contact form</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required />
-
-        <label for="role">Role</label>
-        <input type="text" id="role" name="role" placeholder="Your role" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="name@example.com" required />
-
-        <label for="organisation">Organisation</label>
-        <input type="text" id="organisation" name="organisation" placeholder="Clinic or organisation" required />
-
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" placeholder="City" />
-
-        <label for="comment">Comment</label>
-        <textarea id="comment" name="comment" rows="4" placeholder="How can we help?" required></textarea>
-
-        <button type="submit" class="btn btn-primary">Send and we’ll reply today</button>
-      </form>
+    <section id="book">
+      <div class="card accent-card">
+        <h2>Prefer a call?</h2>
+        <p>Use the calendar link to find a 20-minute slot that works for you, or reply to the screener summary with times that suit.</p>
+        <div class="cta-inline">
+          <a class="btn btn-primary" href="https://calendar.app.google/2CYrPKSnFn259YqR7" target="_blank" rel="noopener">Book 20-min intro</a>
+          <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd8Bh-jlE-f5GahSLUsGvR573ek2jkYYZXaoo1dsQZod-D9Xw/viewform" target="_blank" rel="noopener">Take 10-min screener</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <div class="footer-content">
       <div>
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:[EMAIL]">[EMAIL]</a><br />Address: [COMPANY_ADDRESS]</p>
+        <p>Email: <a href="mailto:dmytro@epicrose.co.uk">dmytro@epicrose.co.uk</a><br />Same-business-day response.</p>
+        <div class="cta-inline">
+          <a class="btn btn-primary" href="https://calendar.app.google/2CYrPKSnFn259YqR7" target="_blank" rel="noopener">Book 20-min intro</a>
+          <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd8Bh-jlE-f5GahSLUsGvR573ek2jkYYZXaoo1dsQZod-D9Xw/viewform" target="_blank" rel="noopener">Take 10-min screener</a>
+        </div>
       </div>
       <div>
         <h3>Policies</h3>
         <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Data Processing (DPA)</a></li>
-          <li><a href="#">PECR statement</a></li>
+          <li><a href="compliance.html#privacy">Privacy</a></li>
+          <li><a href="compliance.html#cookies">Cookies</a></li>
+          <li><a href="compliance.html#dpa">Data Processing (DPA)</a></li>
+          <li><a href="compliance.html#pecr">PECR statement</a></li>
         </ul>
       </div>
       <div>
         <h3>Disclaimer</h3>
-        <p>Operational service only. No PHI is collected, processed, or stored.</p>
+        <p>Operational service only. No PHI is collected, processed or stored.</p>
+        <p class="inline-note">© EpicRose. All rights reserved.</p>
       </div>
     </div>
   </footer>
